@@ -23,4 +23,4 @@ MATCH p=(:User{user_id:'11911068'})-[:IS_CONTACT]-(:Mobile)-[:IS_CONTACT|:IS_REG
 MATCH p=(:User{user_id:'11911068'})-[:IS_FRIEND]-(:Mobile)-[:IS_CONTACT|:IS_REGISTER|:IS_FRIEND]-(:User) RETURN p
 
 //09基于手机查询两个用户的所有最短关联路径
-match p = allShortestPaths((:User{mobile_num:'15990306515'})-[*]-(:User{mobile_num:'15689012782'})) return p
+match p = allShortestPaths((:User{mobile_num:'15990000000'})-[*]-(:User{mobile_num:'15689000000'})) return p
